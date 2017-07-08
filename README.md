@@ -28,3 +28,11 @@ npm test
 ```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+
+Routing Kaan Karanlik
+CSS Johannes Georg Larcher
+Loopback Stefan Theissl
+Kommentare und Doku Denis Peinlich
+Front Design Karin Breckner
+
