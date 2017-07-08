@@ -10,24 +10,24 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: '/',
-      name: 'Hello',
-      component: Hello
+      path: '/', //path of component (were it will be displayed browser path
+      name: 'Hello', //name of component
+      component: Hello //component
     },
     {
-      path: '/Search',
-      name: 'Search',
-      component: Search
+      path: '/Search',//path of component (were it will be displayed browser path
+      name: 'Search',  //name of component
+      component: Search //component
     },
     {
-      path: '/Create',
-      name: 'Create',
-      component: Create
+      path: '/Create', //path of component (were it will be displayed browser path
+      name: 'Create',  //name of component
+      component: Create //component
     },
     {
-      path: '/Test',
-      name: 'Test',
-      component: Test
+      path: '/Test', //path of component (were it will be displayed browser path
+      name: 'Test',  //name of component
+      component: Test //component
     }
   ]
 })
