@@ -14,8 +14,8 @@
 
     <h2 align="center">Grillparty und keinen Grill? Dann miete ganz einfach einen!</h2>
 
-    <button type="button" class="btn btn-primary"><a href="#/search">Jetzt einen Grill suchen</a></button>
-    <button type="button" class="btn btn-primary"><a href="#/create">Einen Grill verleihen</a></button>
+    <a href="#/search"><button type="button" class="btn btn-primary">Jetzt einen Grill suchen</button></a>
+    <a href="#/create"><button type="button" class="btn btn-primary">Einen Grill verleihen</button></a>
 
   </div>
 

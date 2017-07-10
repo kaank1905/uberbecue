@@ -4,57 +4,42 @@
 
 
 
+
+
     <form id="form">
       <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-        <input id="user" type="text" class="form-control" name="benutzer" placeholder="Benutzername">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-tag"></i></span>
+        <input id="Bezeichnung" type="text" class="form-control" name="benutzer" placeholder="Bezeichnung">
       </div>
       <p></p>
 
-      <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-        <input id="mail" type="text" class="form-control" name="mail" placeholder="E-Mail">
-      </div>
-      <p></p>
 
-      <!--<div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-        <input id="passwort" type="passwort" class="form-control" name="passwort" placeholder="Passwort">
-      </div>
-      <p></p>-->
 
-      <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-        <input id="stadt" type="stadt" class="form-control" name="stadt" placeholder="Stadt">
-      </div>
-      <p></p>
 
-      <!--<div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-road"></i></span>
-        <input id="straße" type="text" class="form-control" name="straße" placeholder="Straße">
-      </div>
-      <p></p>-->
+            <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-fire"></i></span>
+                <select class="form-control" id="Art">
+                    <option>Holzkohle Grill</option>
+                    <option>Gas Grill</option>
+                    <option>Elektro Grill</option>
+                    <option>Sonstiges</option>
+                  </select>
+                  </div>
+          <p></p>
+
+            <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-ok"></i></span>
+                <select class="form-control" id="Zustand">
+                    <option>Neuwertig</option>
+                    <option>Gut</option>
+                    <option>Abgenutzt</option>
+                  </select>
+                  </div>
+          <p></p>
 
       <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-map-marker"></i></span>
-        <input id="plz" type="text" class="form-control" name="plz" placeholder="PLZ">
-      </div>
-      <p></p>
-
-      <div class="input-group">
-    <span class="input-group-addon"><i class="glyphicon glyphicon-tag"></i></span>
-          <select class="form-control" id="sel1">
-              <option>Holzkohle Grill</option>
-              <option>Gas Grill</option>
-              <option>Elektro Grill</option>
-              <option>Sonstiges</option>
-            </select>
-            </div>
-    <p></p>
-
-      <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-text-size"></i></span>
-        <input id="password" type="text" class="form-control" name="beschreibung" placeholder="Kurzbeschreibung">
+        <input id="Ort" type="text" class="form-control" name="plz" placeholder="Ort">
       </div>
       <p></p>
 
