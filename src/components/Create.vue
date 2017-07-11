@@ -6,19 +6,16 @@
 
 
 
-    <form id="form">
+    <form id="form" method="POST" action="http://localhost:3000/api/Grills">
       <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-tag"></i></span>
-        <input id="Bezeichnung" type="text" class="form-control" name="benutzer" placeholder="Bezeichnung">
+        <input id="Bezeichnung" v-model="info.Bezeichnung" type="text" name="Bezeichnung" class="form-control" placeholder="Bezeichnung">
       </div>
       <p></p>
 
-
-
-
             <div class="input-group">
           <span class="input-group-addon"><i class="glyphicon glyphicon-fire"></i></span>
-                <select class="form-control" id="Art">
+                <select class="form-control" id="Art" name="Art" v-model="info.Art">
                     <option>Holzkohle Grill</option>
                     <option>Gas Grill</option>
                     <option>Elektro Grill</option>
@@ -29,7 +26,7 @@
 
             <div class="input-group">
           <span class="input-group-addon"><i class="glyphicon glyphicon-ok"></i></span>
-                <select class="form-control" id="Zustand">
+                <select class="form-control" id="Zustand" name="Zustand" v-model="info.Zustand">
                     <option>Neuwertig</option>
                     <option>Gut</option>
                     <option>Abgenutzt</option>
@@ -39,14 +36,15 @@
 
       <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-map-marker"></i></span>
-        <input id="Ort" type="text" class="form-control" name="plz" placeholder="Ort">
+        <input id="Ort" v-model="info.Ort" type="text" name="Ort" class="form-control" placeholder="Ort">
       </div>
       <p></p>
-
+ <button type="submit" v-on:click="redirect" class="btn btn-success"><i class="glyphicon glyphicon-ok"></i> Bestätigen</button>
     </form>
 
- <button type="submit" class="btn btn-success"><i class="glyphicon glyphicon-ok"></i> Bestätigen</button>
 <p></p>
+ <button type="button" class="btn btn-danger" v-on:click="redirect"><i class="glyphicon glyphicon-home"></i> Zurück zur Homepage</button>
+
  <button type="button" class="btn btn-danger" v-on:click="backHome"><i class="glyphicon glyphicon-home"></i> Zurück zur Homepage</button>
 
   </div>
@@ -57,12 +55,23 @@ export default {
   name: 'search',
   data () {
     return {
-      msg: 'Verleihe deinen Grill und verdiene Bares'
+      msg: 'Verleihe deinen Grill und verdiene Bares',
+      info: {
+        Art: '',
+        Bezeichnung: '',
+        Zustand: '',
+        Ort: ''
+      }
     }
   },
   methods: {
     backHome: function () {
       window.location.href = 'http://localhost:8080/#/'
+    },
+    redirect: function () {
+      window.setTimeout(function () {
+        window.location.href = 'http://localhost:8080/#/'
+      }, 500)
     }
   }
 }
