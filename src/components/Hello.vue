@@ -1,19 +1,10 @@
 <template>
   <div class="hello"> <!-- class definition -->
-    <ul>
-      <li><a href="default.asp">Home</a></li>
-      <li><a href="news.asp">Neuigkeiten</a></li>
-      <li><a href="contact.asp">Kontakt</a></li>
-      <li><a href="about.asp">Mein Profil</a></li>
-    </ul>
     <img id="logo" src="../assets/loggo.png" >
     <br>
     <h1 align="center">{{ msg }}</h1>
-
-<p><a href="#/test">Test</a></p>
-
-    <h2 align="center">Grillparty und keinen Grill? Dann miete ganz einfach einen!</h2>
-
+    <h2 align="center">Grillparty? Kein Grill? Kein Problem!</h2>
+    <h3 align="center">Leihe dir einfach und schnell den perfekten Grill!</h3>
     <a href="#/search"><button type="button" class="btn btn-primary">Jetzt einen Grill suchen</button></a>
     <a href="#/create"><button type="button" class="btn btn-primary">Einen Grill verleihen</button></a>
 
@@ -26,7 +17,7 @@ export default {
   name: 'hello',
   data () {
     return {
-      msg: 'Welcome to Uberbecue'
+      msg: 'Willkommen bei Uberbecue'
     }
   }
 }
@@ -59,7 +50,7 @@ a:hover {
   color: white;
   text-decoration: none;
 }
-h1, h2 {
+h1, h2, h3 {
   font-weight: normal;
   color: white;
 
