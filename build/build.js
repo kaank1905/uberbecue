@@ -14,20 +14,20 @@ var spinner = ora('building for production...')
 spinner.start()
 
 rm(path.join(config.build.assetsRoot, config.build.assetsSubDirectory), err => {
-  if (err) throw err
+  if (err) throw err //if construct for errors
   webpack(webpackConfig, function (err, stats) {
     spinner.stop()
-    if (err) throw err
+    if (err) throw err //if construct for errors
     process.stdout.write(stats.toString({
-      colors: true,
+      colors: true,  //boolean
       modules: false,
       children: false,
       chunks: false,
       chunkModules: false
     }) + '\n\n')
 
-    console.log(chalk.cyan('  Build complete.\n'))
-    console.log(chalk.yellow(
+    console.log(chalk.cyan('  Build complete.\n'))  //output on the console if build is finished succesfully
+    console.log(chalk.yellow(  // output in case of failure
       '  Tip: built files are meant to be served over an HTTP server.\n' +
       '  Opening index.html over file:// won\'t work.\n'
     ))

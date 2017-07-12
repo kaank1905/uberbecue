@@ -6,21 +6,21 @@
 
 
 
-    <form id="form" method="POST" action="http://localhost:3000/api/Grills">
+    <form id="form" method="POST" action="http://localhost:3000/api/Grills"> <!-- post of form to api listening at port 3000 -->
       <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-tag"></i></span>
         <input id="Bezeichnung" v-model="info.Bezeichnung" type="text" name="Bezeichnung" class="form-control" placeholder="Bezeichnung">
       </div>
       <p></p>
 
-            <div class="input-group">
+            <div class="input-group">  <!-- div container containing grill options-->
           <span class="input-group-addon"><i class="glyphicon glyphicon-fire"></i></span>
                 <select class="form-control" id="Art" name="Art" v-model="info.Art">
                     <option>Holzkohle Grill</option>
                     <option>Gas Grill</option>
                     <option>Elektro Grill</option>
                     <option>Sonstiges</option>
-                  </select>
+                  </select> <!-- different option of grills to choose from -->
                   </div>
           <p></p>
 
@@ -30,7 +30,7 @@
                     <option>Neuwertig</option>
                     <option>Gut</option>
                     <option>Abgenutzt</option>
-                  </select>
+                  </select> <!-- different options for the grills to choose from -->
                   </div>
           <p></p>
 
@@ -67,12 +67,12 @@ export default {
   methods: {
     backHome: function () {
       window.location.href = 'http://localhost:8080/#/'
-    },
+    }, <!-- function for the back home button tells the page to reference to localhost on port 8080 -->
     redirect: function () {
       window.setTimeout(function () {
         window.location.href = 'http://localhost:8080/#/'
       }, 500)
-    }
+    } <!-- function for the redirect tells the page to reference to localhost on port 8080 -->
   }
 }
 </script>

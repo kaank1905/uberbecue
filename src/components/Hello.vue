@@ -2,15 +2,15 @@
   <div class="hello"> <!-- class definition -->
     <img id="logo" src="../assets/loggo.png" >
     <br>
-    <h1 align="center">{{ msg }}</h1>
+    <h1 align="center">{{ msg }}</h1> <!-- headers with different size on main page -->
     <h2 align="center">Grillparty? Kein Grill? Kein Problem!</h2>
     <h3 align="center">Leihe dir einfach und schnell den perfekten Grill!</h3>
     <a href="#/search"><button type="button" class="btn btn-primary">Jetzt einen Grill suchen</button></a>
     <a href="#/create"><button type="button" class="btn btn-primary">Einen Grill verleihen</button></a>
-
+  <!-- reference to grills with buttons-->
   </div>
 
-</template>
+</template> <!-- close of templating -->
 
 <script>
 export default {

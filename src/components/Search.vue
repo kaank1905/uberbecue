@@ -1,12 +1,12 @@
 <template>
   <div class="Search">
-    <h1>{{ msg }}</h1>
+    <h1>{{ msg }}</h1> <!-- headline with placeholder for message-->
 
     <gmap-map
         :center="center"
         :zoom="7"
         style="width: 500px; height: 300px"
-      >
+      > <!-- initialization of map from google -->
         <gmap-marker
           v-for="m in markers"
           :position="m.position"
@@ -15,7 +15,7 @@
           @click="center=m.position"
         ></gmap-marker>
       </gmap-map>
-
+<!-- setting of the marker -->
       </div>
 </template>
 
@@ -43,7 +43,7 @@ export default {
       }]
     }
   }
-}
+} <!-- setting of latitude of longitutude -->
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

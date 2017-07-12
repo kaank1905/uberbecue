@@ -67,5 +67,5 @@ exports.styleLoaders = function (options) {
       use: loader
     })
   }
-  return output
+  return output //give back value
 }
