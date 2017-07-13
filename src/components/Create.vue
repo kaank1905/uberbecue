@@ -15,7 +15,7 @@
 
             <div class="input-group">  <!-- div container containing grill options-->
           <span class="input-group-addon"><i class="glyphicon glyphicon-fire"></i></span>
-                <select class="form-control" id="Art" name="Art" v-model="info.Art">
+                <select class="form-control" id="Art" name="Art">
                     <option>Holzkohle Grill</option>
                     <option>Gas Grill</option>
                     <option>Elektro Grill</option>
@@ -26,7 +26,7 @@
 
             <div class="input-group">
           <span class="input-group-addon"><i class="glyphicon glyphicon-ok"></i></span>
-                <select class="form-control" id="Zustand" name="Zustand" v-model="info.Zustand">
+                <select class="form-control" id="Zustand" name="Zustand">
                     <option>Neuwertig</option>
                     <option>Gut</option>
                     <option>Abgenutzt</option>
