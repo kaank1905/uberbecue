@@ -1,8 +1,8 @@
 require('./check-versions')()
 
-var config = require('../config') //request for config path required
-if (!process.env.NODE_ENV) { //if construct for Node
-  process.env.NODE_ENV = JSON.parse(config.dev.env.NODE_ENV) //parsing process into json
+var config = require('../config') // request for config path required
+if (!process.env.NODE_ENV) { // if construct for Node
+  process.env.NODE_ENV = JSON.parse(config.dev.env.NODE_ENV) // parsing process into json
 }
 
 var opn = require('opn')
@@ -81,7 +81,7 @@ devMiddleware.waitUntilValid(() => {
   _resolve()
 })
 
-var server = app.listen(port) //server listens to port
+var server = app.listen(port) // server listens to port
 
 module.exports = {
   ready: readyPromise,
