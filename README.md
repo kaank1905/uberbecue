@@ -101,28 +101,36 @@ that give you options for grills to choose from. As well as information about th
 Implementation of search option and certain style elements (css).
 
 Hello.vue
-
+Implementation of header (Main Menu) and Buttons, templating as well as style options.
 Map.vue
+Implementation of google maps with which u can search for your location as well as
+the location of the grill next to u. including style.
 
 Search.vue
+Implementation of google maps(technical components) including latitude and longitude.
+Setting of Markers on the map to determine position.
+
 
 Test.vue
-
+Adding and creating of markers for the map in search.vue console output of current position.
+Css implementation of style for the map.
 
 folder specs
 
 nightwatch.conf.js
-
+integration of selenium for test of components. Including Report integration and specialisations
+to make the app "testable". (As specified in the Requirements.
 
 
 runner.js
+Integration of the runner that lets the test for the app run to check if the code is valid.
 
 folder specs
 
 index.js
-
+Integration of source and test files to run the test on the app.
 
 
 karma.conf.js
-
-
+Integration of framework and browser integration of middleware, and setting of an directory
+for the test covery. 
