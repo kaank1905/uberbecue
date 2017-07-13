@@ -46,9 +46,11 @@ of status and there displaying state, console output for correct and/or incorrec
 
 
 check-versions.js
+Determines the required package configuration. Checks the version requirements via looping.
+Gives information about the modules that need to be updated to use this app.
 
 dev-client.js
-
+Reloading of window applying webpack triggers events when subscribed.
 
 dev-server.js
 
