@@ -4,6 +4,7 @@ import Hello from '@/components/Hello'
 import Search from '@/components/Search'
 import Create from '@/components/Create'
 import Test from '@/components/Test'
+import AllGrills from '@/components/AllGrills'
 
 Vue.use(Router)
 
@@ -37,6 +38,14 @@ export default new Router({
        // name of component
       component: Test
        // component
+    },
+    {
+      path: '/AllGrills',
+      // path of component (were it will be displayed browser path
+      name: 'AllGrills',
+      // name of component
+      component: AllGrills
+      // component
     }
   ]
 })

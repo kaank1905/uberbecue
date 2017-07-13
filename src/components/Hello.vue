@@ -7,6 +7,7 @@
     <h3 align="center">Leihe dir einfach und schnell den perfekten Grill!</h3>
     <a href="#/search"><button type="button" class="btn btn-primary">Jetzt einen Grill suchen</button></a>
     <a href="#/create"><button type="button" class="btn btn-primary">Einen Grill verleihen</button></a>
+    <a href="#/allgrills"><button type="button" class="btn btn-primary">Alle Grills anzeigen</button></a>
   <!-- reference to grills with buttons-->
   </div>
 
