@@ -154,7 +154,7 @@ form {
     height: 200px;
   }
 div.block {
-  background-color: #B00000;
+  background-color: #921C1C;
   filter: alpha(opacity=60);
   /* IE */
   -moz-opacity: 0.6;
