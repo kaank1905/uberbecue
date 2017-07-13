@@ -68,5 +68,5 @@ exports.styleLoaders = function (options) {
     })
   }
   return output
-  //give back value
+
 }

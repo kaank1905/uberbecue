@@ -67,12 +67,12 @@ export default {
   methods: {
     backHome: function () {
       window.location.href = 'http://localhost:8080/#/'
-    }, <!-- function for the back home button tells the page to reference to localhost on port 8080 -->
+    },
     redirect: function () {
       window.setTimeout(function () {
         window.location.href = 'http://localhost:8080/#/'
       }, 500)
-    } <!-- function for the redirect tells the page to reference to localhost on port 8080 -->
+    }
   }
 }
 </script>

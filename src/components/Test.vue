@@ -36,7 +36,7 @@ export default {
       createdMarker.position.lat = mouseArgs.latLng.lat()
       createdMarker.position.lng = mouseArgs.latLng.lng()
       console.log(createdMarker.position.lat, createdMarker.position.lng)
-    }, <!-- creating marker for latitude of longitude-->
+    },
     addMarker () {
       this.markers.push({
         position: { lat: 48.8538302, lng: 2.2982161 },
