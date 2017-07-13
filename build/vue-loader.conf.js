@@ -1,5 +1,7 @@
-var utils = require('./utils') //required paths for loading utilities
-var config = require('../config') //required paths for loading utilities
+var utils = require('./utils')
+//required paths for loading utilities
+var config = require('../config')
+//required paths for loading utilities
 var isProduction = process.env.NODE_ENV === 'production'
 
 module.exports = {

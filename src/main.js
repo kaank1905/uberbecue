@@ -7,7 +7,8 @@ import router from './router'
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
-new Vue({ // new component with the id app
+new Vue({
+  // new component with the id app
   el: '#app',
   router,
   template: '<App/>',
