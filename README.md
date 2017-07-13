@@ -40,7 +40,9 @@ Front Design Karin Breckner
 Docu Javascript Files
 
 build.js
-
+Responsible class for the app build. Describes the handling in case of errors as well as
+the different paths that are required. Also responsible for status updates/ e.g. changes
+of status and there displaying state, console output for correct and/or incorrect build.
 
 
 check-versions.js
