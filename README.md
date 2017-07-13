@@ -65,9 +65,10 @@ Implemented with if constructs mainly as well as standalone style information
 via regex function.
 
 vue-loader.conf.js
-
+Loading css loaders, the css source map and production source.
 
 webpack.base.conf.js
+test of vue, js, pictures and so on.
 
 weback.dev.conf.js
 
@@ -83,16 +84,21 @@ dev.env.js
 
 index.js
 
+Setting index.html and directory name as well as path.
+Setting port that will be runned in the app (in this case port 8080).
 
 prod.env.js
+Export of the production node module.
 
 test.env.js
-
+Export of the testing possibilities.
 
 components(Vuecode)
 
 Create.vue
-
+Implementation of the link to the api (port 3000). Implementatin of div containers
+that give you options for grills to choose from. As well as information about the condition.
+Implementation of search option and certain style elements (css).
 
 Hello.vue
 
