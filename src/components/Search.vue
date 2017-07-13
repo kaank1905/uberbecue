@@ -4,8 +4,8 @@
 
     <gmap-map
         :center="center"
-        :zoom="7"
-        style="width: 500px; height: 300px"
+        :zoom="8"
+        style="width: 1920px; height: 1000px"
       >
         <gmap-marker
           v-for="m in markers"
@@ -35,11 +35,13 @@ export default {
   name: 'search',
   data () {
     return {
-      center: {lat: 10.0, lng: 10.0},
+      center: {lat: 48.2, lng: 16.4},
       markers: [{
         position: {lat: 10.0, lng: 10.0}
       }, {
         position: {lat: 11.0, lng: 11.0}
+      }, {
+        position: {lat: 47.9, lng: 12.2}
       }]
     }
   }
