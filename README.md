@@ -128,9 +128,10 @@ Integration of the runner that lets the test for the app run to check if the cod
 folder specs
 
 index.js
-Integration of source and test files to run the test on the app.
+Integration of source and test files to run the test on the app. As well as subset files.
+
 
 
 karma.conf.js
 Integration of framework and browser integration of middleware, and setting of an directory
-for the test covery. 
+for the test covery.
