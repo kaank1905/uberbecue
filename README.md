@@ -36,3 +36,76 @@ Loopback Stefan Theissl
 Kommentare und Doku Denis Peinlich
 Front Design Karin Breckner
 
+
+Docu Javascript Files
+
+build.js
+
+
+
+check-versions.js
+
+dev-client.js
+
+
+dev-server.js
+
+utils.js
+
+
+vue-loader.conf.js
+
+
+webpack.base.conf.js
+
+weback.dev.conf.js
+
+
+webpack.prod.conf.js
+
+webpack.test.conf.js
+
+
+config folder
+
+dev.env.js
+
+index.js
+
+
+prod.env.js
+
+test.env.js
+
+
+components(Vuecode)
+
+Create.vue
+
+
+Hello.vue
+
+Map.vue
+
+Search.vue
+
+Test.vue
+
+
+folder specs
+
+nightwatch.conf.js
+
+
+
+runner.js
+
+folder specs
+
+index.js
+
+
+
+karma.conf.js
+
+
