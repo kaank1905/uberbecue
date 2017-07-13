@@ -53,9 +53,16 @@ dev-client.js
 Reloading of window applying webpack triggers events when subscribed.
 
 dev-server.js
+Parsing of Node, variables hold webpack as well as the middleware.
+Possibility to define HTTP Proxies for the custom API backend.
+Possibility of reload for the template if changes are applied (instant loading).
+Definition of the uri and the http adress with the port on which it is running.
+var sever responsible for the port to listen so the app can be started(localhost).
 
 utils.js
-
+Css Loading, Sass Loading as well as other styleinformation like postcss and less.
+Implemented with if constructs mainly as well as standalone style information
+via regex function.
 
 vue-loader.conf.js
 
