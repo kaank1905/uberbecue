@@ -7,19 +7,19 @@
     <div class="Grillinfo" v-for="item in items">
       <ul>
         <li>
-          <h1>Bezeichnung: </h1>{{ item.Bezeichnung }}
+          <h3>Bezeichnung: </h3>{{ item.Bezeichnung }}
         </li>
         <li>
-          <h1>Art: </h1>{{ item.Art }}
+          <h3>Art: </h3>{{ item.Art }}
         </li>
         <li>
-          <h1>Zustand: </h1>{{ item.Zustand }}
+          <h3>Zustand: </h3>{{ item.Zustand }}
         </li>
         <li>
-          <h1>Ort: </h1>{{ item.Ort }}
+          <h3>Ort: </h3>{{ item.Ort }}
         </li>
         <li>
-          <h1>ID: </h1>{{ item.id }}
+          <h3>ID: </h3>{{ item.id }}
         </li>
       </ul>
     </div>
@@ -71,6 +71,8 @@
   h1, h2 {
     font-weight: normal;
     color: white;
+    font-style: italic;
+    font-size: 30px;
   }
 
   ul {
@@ -92,6 +94,7 @@
 
     margin-left: 30%;
     margin-right: 30%;
+
   }
 
   .AllGrills {
@@ -99,17 +102,30 @@
     display: flex;
     flex-direction: row;
 
+
+
+  }
+
+  .Allgrills :nth-Allgrills(3n+1) {
+    clear: left;
   }
   .Grillinfo{
     display: inline-block;
     padding-right: 100px;
     width: 400px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: darkgoldenrod;
+    margin-top: 50px;
+
+
 
   }
-  h1{
+  h3{
     font-size: 24px;
     color: goldenrod;
     font-style: italic;
+    text-decoration: underline;
   }
   .btn-danger{
     border-color: white;
@@ -120,6 +136,7 @@
   }
   .body {
     background-image: url(../assets/background.jpg);
+
 
   }
   .button {
