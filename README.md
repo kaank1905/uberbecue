@@ -119,12 +119,13 @@ the location of the grill next to u. including style.
 
 Search.vue
 Implementation of google maps(technical components) including latitude and longitude.
-Setting of Markers on the map to determine position.
+Setting of Markers on the map to determine position. Integration of back home function
+to port 8080.
 
 
 Test.vue
 Adding and creating of markers for the map in search.vue console output of current position.
-Css implementation of style for the map.
+Css implementation of style for the map. Positon and marker declaration.
 
 folder specs
 
@@ -143,4 +144,7 @@ Integration of source and test files to run the test on the app. As well as subs
 
 karma.conf.js
 Integration of framework and browser integration of middleware, and setting of an directory
-for the test covery.
+for the test covery. As well as webpack integration.
+
+index.html
+mainpage integration with headline title.
