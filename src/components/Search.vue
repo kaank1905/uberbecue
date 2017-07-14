@@ -77,4 +77,12 @@ li {
 a {
   color: #42b983;
 }
+
+.btn-danger{
+  border-color: white;
+}
+.btn-danger:hover{
+  border-color: white;
+  background-color: darkgoldenrod;
+}
 </style>

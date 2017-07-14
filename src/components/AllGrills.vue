@@ -3,23 +3,26 @@
     <div class="Grillinfo" v-for="item in items">
       <ul>
         <li>
-          {{ item.Bezeichnung }}
+          <h1>Bezeichnung: </h1>{{ item.Bezeichnung }}
         </li>
         <li>
-          {{ item.Art }}
+          <h1>Art: </h1>{{ item.Art }}
         </li>
         <li>
-          {{ item.Zustand }}
+          <h1>Zustand: </h1>{{ item.Zustand }}
         </li>
         <li>
-          {{ item.Ort }}
+          <h1>Ort: </h1>{{ item.Ort }}
         </li>
         <li>
-          {{ item.id }}
+          <h1>ID: </h1>{{ item.id }}
         </li>
       </ul>
     </div>
+    <br>
+    <button type="button" class="btn btn-danger" v-on:click="backHome"><i class="glyphicon glyphicon-home"></i> Zurück zur Homepage</button>
   </div>
+
 </template>
 
 <script>
@@ -62,12 +65,14 @@
 
   ul {
     list-style-type: none;
-    padding: 0;
+    margin: 15px;
+    margin-left: 10%;
   }
 
   li {
-    display: inline-block;
-    margin: 0 10px;
+    /*display: inline-block;*/
+    text-align: left;
+    font-size: 20px;
   }
 
   a {
@@ -77,5 +82,27 @@
 
     margin-left: 30%;
     margin-right: 30%;
+  }
+
+  .AllGrills {
+    color: white;
+    background-image: url(../assets/background.jpg);
+  }
+  .Grillinfo{
+    display: inline-block;
+    padding-right: 100px;
+    width: 300px;
+  }
+  h1{
+    font-size: 24px;
+    color: goldenrod;
+    font-style: italic;
+  }
+  .btn-danger{
+    border-color: white;
+  }
+  .btn-danger:hover{
+    border-color: white;
+    background-color: darkgoldenrod;
   }
 </style>

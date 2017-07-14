@@ -69,7 +69,7 @@
     <div class ="back">
  <button type="button" class="btn btn-danger" v-on:click="redirect"><i class="glyphicon glyphicon-home"></i> Zurück zur Homepage</button>
 
- <button type="button" class="btn btn-danger" v-on:click="backHome"><i class="glyphicon glyphicon-home"></i> Zurück zur Homepage</button>
+ <button type="button" class="btn btn-danger" v-on:click="backHome"><i class="glyphicon glyphicon-home"></i> Back to the Startseite</button>
     </div>
 
   </div>
@@ -174,6 +174,13 @@ div.header {
 
 }
 
+.btn-danger{
+  border-color: white;
+}
+.btn-danger:hover{
+  border-color: white;
+  background-color: darkgoldenrod;
+}
 
 
 </style>
