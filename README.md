@@ -94,6 +94,10 @@ test.env.js
 Export of the testing possibilities.
 
 components(Vuecode)
+AllGrills.vue
+Gives information about the Grills and keeps all important data like condition and id for the user
+to be displayed. Responding with port 8080 as well as port 3000(API). Includes
+styleinformation (css) for the site.
 
 Create.vue
 Implementation of the link to the api (port 3000). Implementatin of div containers
