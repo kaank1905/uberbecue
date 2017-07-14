@@ -34,7 +34,10 @@ Routing Kaan Karanlik
 CSS Johannes Georg Larcher
 Loopback Stefan Theissl
 Kommentare und Doku Denis Peinlich
-Front Design Karin Breckner
+Front Design Johannes Georg Larcher
+
+
+Karin Breckner
 
 
 Docu Javascript Files
@@ -70,20 +73,23 @@ Loading css loaders, the css source map and production source.
 webpack.base.conf.js
 test of vue, js, pictures and so on.
 
-weback.dev.conf.js
-
+webpack.dev.conf.js
+Code related entry chunks, cheap-module, fast development.
 
 webpack.prod.conf.js
+Extracting of css files, compressing of css files, possibility to work with different chuncks.
+static assets, copy custom assets.
 
 webpack.test.conf.js
+Webpack config for unit tests, usage of vue loader for testing of scss files.
 
 
 config folder
 
 dev.env.js
+export of the development module component.
 
 index.js
-
 Setting index.html and directory name as well as path.
 Setting port that will be runned in the app (in this case port 8080).
 
@@ -133,8 +139,6 @@ folder specs
 
 index.js
 Integration of source and test files to run the test on the app. As well as subset files.
-
-
 
 karma.conf.js
 Integration of framework and browser integration of middleware, and setting of an directory

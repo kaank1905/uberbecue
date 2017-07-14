@@ -1,4 +1,8 @@
 <template>
+  <div class ="body">
+    <div class="header">
+      <h1>Grills die Ihnen zur Verfügung stehen!</h1>
+    </div>
   <div class="AllGrills">
     <div class="Grillinfo" v-for="item in items">
       <ul>
@@ -22,8 +26,13 @@
       <button class="btn btn-grilloperation" v-on:click="edit_grill">Edit</button>
     </div>
     <br>
-    <button type="button" class="btn btn-danger" v-on:click="backHome"><i class="glyphicon glyphicon-home"></i> Zurück zur Homepage</button>
   </div>
+    <div class="button">
+      <button type="button" class="btn btn-danger" v-on:click="backHome"><i class="glyphicon glyphicon-home"></i> Zurück zur Homepage</button>
+    </div>
+  </div>
+
+
 
 </template>
 
@@ -76,6 +85,7 @@
 <style scoped>
   h1, h2 {
     font-weight: normal;
+    color: white;
   }
 
   ul {
@@ -101,13 +111,20 @@
 
   .AllGrills {
     color: white;
-    background-image: url(../assets/background.jpg);
+    display: flex;
+    flex-direction: row;
+
   }
   .Grillinfo{
     display: inline-block;
     padding-right: 100px;
+<<<<<<< HEAD
     width: 300px;
     margin-bottom: 20px;
+=======
+    width: 400px;
+
+>>>>>>> origin/master
   }
   h1{
     font-size: 24px;
@@ -121,6 +138,7 @@
     border-color: white;
     background-color: darkgoldenrod;
   }
+<<<<<<< HEAD
   .btn-grilloperation{
     background-color: darkblue;
     border-color: white;
@@ -133,6 +151,14 @@
   }
   .btn-grilloperation:focus{
     color: white;
+=======
+  .body {
+    background-image: url(../assets/background.jpg);
+
+  }
+  .button {
+    margin-top: 100px;
+>>>>>>> origin/master
   }
 
 </style>
