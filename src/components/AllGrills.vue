@@ -118,13 +118,9 @@
   .Grillinfo{
     display: inline-block;
     padding-right: 100px;
-<<<<<<< HEAD
     width: 300px;
     margin-bottom: 20px;
-=======
     width: 400px;
-
->>>>>>> origin/master
   }
   h1{
     font-size: 24px;
@@ -138,7 +134,6 @@
     border-color: white;
     background-color: darkgoldenrod;
   }
-<<<<<<< HEAD
   .btn-grilloperation{
     background-color: darkblue;
     border-color: white;
@@ -151,14 +146,13 @@
   }
   .btn-grilloperation:focus{
     color: white;
-=======
+  }
   .body {
     background-image: url(../assets/background.jpg);
 
   }
   .button {
     margin-top: 100px;
->>>>>>> origin/master
   }
 
 </style>
