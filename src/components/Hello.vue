@@ -5,9 +5,11 @@
     <h1 align="center">{{ msg }}</h1> <!-- headers with different size on main page -->
     <h2 align="center">Grillparty? Kein Grill? Kein Problem!</h2>
     <h3 align="center">Leihe dir einfach und schnell den perfekten Grill!</h3>
-    <a href="#/search"><button type="button" class="btn btn-primary">Jetzt einen Grill suchen</button></a>
-    <a href="#/create"><button type="button" class="btn btn-primary">Einen Grill verleihen</button></a>
-    <a href="#/allgrills"><button type="button" class="btn btn-primary">Alle Grills anzeigen</button></a>
+    <div class="homebuttons">
+      <a href="#/search"><button type="button" class="btn btn-primary">Jetzt einen Grill suchen</button></a>
+      <a href="#/create"><button type="button" class="btn btn-primary">Einen Grill verleihen</button></a>
+      <a href="#/allgrills"><button type="button" class="btn btn-primary">Alle Grills anzeigen</button></a>
+    </div>
   <!-- reference to grills with buttons-->
   </div>
 
@@ -26,11 +28,15 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.homebuttons{
+  margin-top: 30%;
+}
 button {
   background-color: #333;
   border:0;
-  margin-top: 500px;
+  /*margin-top: 30%;*/
   padding: 12px 60px;
+  margin-bottom: 20px;
   font-size: 18px;
   width: 300px;
 }
