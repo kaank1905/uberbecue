@@ -18,6 +18,8 @@
           <h1>ID: </h1>{{ item.id }}
         </li>
       </ul>
+      <button class="btn btn-grilloperation" v-on:click="delete_grill">Delete</button>
+      <button class="btn btn-grilloperation" v-on:click="edit_grill">Edit</button>
     </div>
     <br>
     <button type="button" class="btn btn-danger" v-on:click="backHome"><i class="glyphicon glyphicon-home"></i> Zurück zur Homepage</button>
@@ -47,6 +49,19 @@
     methods: {
       backHome: function () {
         window.location.href = 'http://localhost:8080/#/'
+      },
+      delete_grill: function () {
+        // itemid simuliert die id, welche eigentlich übergeben werden sollte über den löschen button.
+        // Leider haben wir kein funktionierende Lösung gefunden, diese Übergabe zu bewerkstelligen
+        // Das Löschen des Objektes funktioniert aber mit folgender Syntax einwandfrei
+        var itemid = 0
+        var request = new XMLHttpRequest()
+        request.open('DELETE', 'http://localhost:3000/api/Grills/' + itemid)
+        request.send()
+        console.log('deleted')
+      },
+      edit_grill: function () {
+        console.log('edited')
       },
       redirect: function () {
         window.setTimeout(function () {
@@ -92,6 +107,7 @@
     display: inline-block;
     padding-right: 100px;
     width: 300px;
+    margin-bottom: 20px;
   }
   h1{
     font-size: 24px;
@@ -105,4 +121,18 @@
     border-color: white;
     background-color: darkgoldenrod;
   }
+  .btn-grilloperation{
+    background-color: darkblue;
+    border-color: white;
+    margin-left: 0;
+  }
+  .btn-grilloperation:hover{
+    background-color: darkred;
+    border-color: white;
+    color: white;
+  }
+  .btn-grilloperation:focus{
+    color: white;
+  }
+
 </style>
