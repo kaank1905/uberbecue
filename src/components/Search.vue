@@ -5,7 +5,7 @@
     <gmap-map
         :center="center"
         :zoom="8"
-        style="width: 1920px; height: 1000px"
+        style="width: 1920px; height: 500px"
       >
         <gmap-marker
           v-for="m in markers"
@@ -16,7 +16,11 @@
         ></gmap-marker>
       </gmap-map>
 
+    <button type="button" class="btn btn-danger" v-on:click="backHome"><i class="glyphicon glyphicon-home"></i> Zurück zur Homepage</button>
+
       </div>
+
+
 </template>
 
 <script>
@@ -44,8 +48,14 @@ export default {
         position: {lat: 47.9, lng: 12.2}
       }]
     }
+  },
+  methods: {
+    backHome: function () {
+      window.location.href = 'http://localhost:8080/#/'
+    }
   }
 }
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
