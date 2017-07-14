@@ -18,6 +18,7 @@
 
 
     <form id="form" method="POST" action="http://localhost:3000/api/Grills"> <!-- post of form to api listening at port 3000 -->
+
               {{typ}}
       <p></p>
       <div class="input-group">
@@ -79,7 +80,7 @@ export default {
   name: 'search',
   data () {
     return {
-      msg: 'Verleihe deinen Grill und verdiene Bares',
+      msg: 'Bares für deinen Grill!',
       typ: 'Um welchen Typ handelt es sich?',
       art: 'Um welche Art von Grill handelt es sich? (Bitte auswählen)',
       zustand: 'In welchem Zustand befindet sich der Grill? (Bitte auswählen)',
@@ -112,6 +113,7 @@ h1, h2 {
 }
 h1 {
   margin-bottom: 100px;
+
 
 }
 
@@ -154,7 +156,7 @@ form {
     height: 200px;
   }
 div.block {
-  background-color: #921C1C;
+  background-color: #92252d;
   filter: alpha(opacity=60);
   /* IE */
   -moz-opacity: 0.6;
@@ -169,6 +171,7 @@ div.block {
 }
 div.header {
     margin-top: 50px;
+
 }
 
 
