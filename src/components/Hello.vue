@@ -29,7 +29,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .homebuttons{
-  margin-top: 30%;
+  margin-top: 15%;
 }
 button {
   background-color: #333;
