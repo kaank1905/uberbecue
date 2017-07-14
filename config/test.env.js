@@ -4,4 +4,4 @@ var devEnv = require('./dev.env')
 module.exports = merge(devEnv, {
   NODE_ENV: '"testing"'
 })
-// testing possibility for code
+// testing possibility for code and export of module merge

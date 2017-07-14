@@ -34,7 +34,7 @@ Routing Kaan Karanlik
 CSS Johannes Georg Larcher
 Loopback Stefan Theissl
 Kommentare und Doku Denis Peinlich
-Front Design Johannes Georg Larcher
+Front Design Johannes Georg Larcher, Denis Peinlich
 
 
 Karin Breckner
@@ -54,6 +54,7 @@ Gives information about the modules that need to be updated to use this app.
 
 dev-client.js
 Reloading of window applying webpack triggers events when subscribed.
+Eventhandling for client subscribing.
 
 dev-server.js
 Parsing of Node, variables hold webpack as well as the middleware.
